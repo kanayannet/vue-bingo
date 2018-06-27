@@ -11,7 +11,7 @@ const Result = {
 jest.useFakeTimers()
 const callback = jest.fn()
 
-describe('Logick test', () => {
+describe('Logic test', () => {
   test('shuffle', () => {
     Logic.shuffle({
       coreObj: Core,
