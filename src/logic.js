@@ -37,9 +37,9 @@ class Logic {
         refs.resultObj[refs.resultDataKye].push({ text: this.numbers[rand] })
         this.numbers.splice(rand, 1)
         this.isShuffle = false
+        refs.jestCallback && refs.jestCallback()
       }
       cnt ++
-      refs.jestCallback && refs.jestCallback()
     }, 100)
     return timer
   }
