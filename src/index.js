@@ -15,7 +15,8 @@ const Result = new Vue({
   },
   computed: {
     bingoResults: function() {
-      if(this.results.length %31 == 0){
+      let domLength = $('.result').length
+      if(domLength %30 == 0){
         $('.result:last-child').after('<div style="display:table-row"></div>')
       }
       return this.results
