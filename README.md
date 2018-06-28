@@ -9,3 +9,5 @@
 - step 3
     - open index.htm
         - press any key...
+
+- exapmle: https://kanayannet.github.io/vue-bingo/
