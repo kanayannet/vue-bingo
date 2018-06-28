@@ -10,17 +10,13 @@ Vue.component('result', {
 const Result = new Vue({
   el: '#js-result',
   data: {
-    results: [
-    ]
-  },
-  computed: {
-    bingoResults: function() {
-      let domLength = $('.result').length
-      if(domLength %30 == 0){
-        $('.result:last-child').after('<div style="display:table-row"></div>')
-      }
-      return this.results
-    }
+    results: []
+  }
+})
+
+Result.$watch('results', function(results) {
+  if(results.length %30 == 0){
+    $('.result:last-child').after('<div style="display:table-row"></div>')
   }
 })
 
