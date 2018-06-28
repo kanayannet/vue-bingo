@@ -1,4 +1,5 @@
 const Logic = require('./logic')
+const Vue = require('vue')
 const $ = require('jquery')
 
 Vue.component('result', {

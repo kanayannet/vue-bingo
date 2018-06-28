@@ -9,5 +9,10 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.join(__dirname, './')
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
   }
 };
