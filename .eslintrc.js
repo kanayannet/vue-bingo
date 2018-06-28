@@ -8,6 +8,9 @@ module.exports = {
         "ecmaVersion": 2016,
         "sourceType": "module"
     },
+    "globals": {
+      "document": true
+    },
     "rules": {
         "indent": [
             "error",
