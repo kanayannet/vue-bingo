@@ -1,5 +1,7 @@
 # bingo game helper for vue.js
 
+[![Build Status](https://travis-ci.org/kanayannet/vue-bingo.svg?branch=master)](https://travis-ci.org/kanayannet/vue-bingo)
+
 - step 1
     - put mp3_file to local directory
 - step 2
