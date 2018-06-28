@@ -1,4 +1,5 @@
 const Logic = require('./logic')
+const $ = require('jquery')
 
 Vue.component('result', {
   props: ['result'],
@@ -45,5 +46,5 @@ const Core = new Vue({
 })
 
 $(document).on('click keydown touchstart','body', function(){
-  Core.play();
+  Core.play()
 })
