@@ -1,5 +1,10 @@
 const Logic = require('./logic')
 
+Vue.component('result', {
+  props: ['result'],
+  template: '<div class="result">{{ result }}</div>'
+})
+
 const Result = new Vue({
   el: '#js-result',
   data: {
@@ -14,6 +19,11 @@ const Result = new Vue({
       return this.results
     }
   }
+})
+
+Vue.component('bingo-number', {
+  props: ['number'],
+  template: '<span>{{ number }}</span>'
 })
 
 const Core = new Vue({

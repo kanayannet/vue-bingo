@@ -7,12 +7,12 @@
     <body>
         <div class="container">
             <div class="open_block">
-                <div class="open" id="js-open">{{ bingoNumber }}</div>
+                <div class="open" id="js-open">
+                  <bingo-number v-bind:number="bingoNumber"></bingo-number>
+                </div>
             </div>
             <div class="result_block" id="js-result">
-              <div class="result" v-for="number in bingoResults">
-                {{ number.text }}
-              </div>
+              <result v-for="number in bingoResults" v-bind:result="number.text"></result>
             </div>
             <div class="copyright">&copy;Hiroaki Kanazawa</div>
             <!-- Please specify mp3 file here src="...."-->
