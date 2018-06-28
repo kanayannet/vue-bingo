@@ -5,4 +5,5 @@ node_js:
 install:
   - npm i -D
 script:
+  - npm run eslint src/*.js
   - npm test
