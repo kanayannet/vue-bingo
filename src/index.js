@@ -11,12 +11,13 @@ const Result = new Vue({
   el: '#js-result',
   data: {
     results: []
-  }
-})
-
-Result.$watch('results', function(results) {
-  if(results.length %30 == 0){
-    $('.result:last-child').after('<div style="display:table-row"></div>')
+  },
+  watch: {
+    results: function() {
+      if(this.results.length %30 == 0){
+        $('.result:last-child').after('<div style="display:table-row"></div>')
+      }
+    }
   }
 })
 
